@@ -1,5 +1,9 @@
 <h1>H1 Başlık fsApp</h1>
-<h1>{{caption}}</h1>
-{% comment %} <ul>
-    {% for i in my_list %}
-</ul> {% endcomment %}
+<h1>{{caption | title}}</h1>
+{% comment %} title ilk harfini büyük yapar {% endcomment %}
+
+<ul>
+    {% for i in my_list %} 
+    <li>{{i}}</li>
+     {% endfor %}
+</ul>
